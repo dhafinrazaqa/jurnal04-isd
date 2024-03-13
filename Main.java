@@ -18,11 +18,11 @@ public class Main {
                 case 1:
                     System.out.println("Input Data Tugas");
                     System.out.print("Mata Kuliah: ");
-                    String mataKuliah = s.next();
+                    String mataKuliah = s.next(); s.nextLine();
                     System.out.print("Tugas: ");
-                    String tugas = s.next();
+                    String tugas = s.next(); s.nextLine();
                     System.out.print("Deadline: ");
-                    String deadline = s.next();
+                    String deadline = s.next(); s.nextLine();
 
                     listTugas.inputTugas(new Tugas(mataKuliah, tugas, deadline));
                     break;
@@ -44,12 +44,12 @@ public class Main {
                             break;
                         case 3:
                             System.out.println("Masukkan mata kuliah yang dihapus: ");
-                            String mataKuliahDihapus = s.next();
+                            String mataKuliahDihapus = s.next(); s.nextLine();
                             listTugas.hapusTugasMatkul(mataKuliahDihapus);
                             break;
                         case 4:
                             System.out.println("Masukkan nama tugas yang dihapus: ");
-                            String tugasDihapus = s.next();
+                            String tugasDihapus = s.next(); s.nextLine();
                             listTugas.hapusTugasNama(tugasDihapus);
                             break;
                     }
